@@ -1,0 +1,4 @@
+host = "https://adb-674039351419250.10.azuredatabricks.net"
+cluster_id = "0529-221702-yucthdbq"
+port = 443
+profile = "dev"

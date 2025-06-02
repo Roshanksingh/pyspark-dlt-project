@@ -1,0 +1,24 @@
+{
+  "name": "bronze-region-pipeline",
+  "storage": "abfss://bronze@endtoendadls.dfs.core.windows.net/system/pipelines/bronze",
+  "target": "e2e_catalog.bronze",
+  "development": true,
+  "clusters": [
+    {
+      "label": "default",
+      "num_workers": 2
+    }
+  ],
+  "libraries": [
+    {
+      "notebook": {
+        "path": "/Repos/shivangeebhu@gmail.com/pyspark-dlt-project/src/bronze/bronze_region"
+      }
+    }
+  ],
+  "continuous": false,
+  "channel": "CURRENT",
+  "configuration": {
+    "file_name": "region"
+  }
+}
