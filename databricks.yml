@@ -19,7 +19,7 @@ resources:
       channel: CURRENT
       libraries:
         - notebook:
-            path: notebooks/bronze/bronze_region.ipynb
+            path: notebooks/bronze/bronze__region.ipynb
       clusters:
         - label: default
           num_workers: 2
