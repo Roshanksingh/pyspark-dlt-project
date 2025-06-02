@@ -1,0 +1,4 @@
+environment: dev
+workspace:
+  host: https://adb-674039351419250.10.azuredatabricks.net
+  root_path: /Users/shivangeebhu@gmail.com/pyspark-dlt-project

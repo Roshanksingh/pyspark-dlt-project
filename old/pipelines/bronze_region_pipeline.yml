@@ -1,0 +1,15 @@
+name: bronze_region_pipeline
+pipeline_type: delta-live-tables
+clusters:
+  - label: default
+    num_workers: 2
+    spark_version: 13.3.x-scala2.12
+    node_type_id: Standard_DS3_v2
+libraries:
+  - notebook: ../notebooks/bronze/bronze_region.py
+target: e2e_catalog.bronze
+channel: CURRENT
+auto_refresh: false
+edition: CORE
+continuous: false
+development: true
